@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css" >
+    </head>
+    <body>
+        
+        <h1>Liste des Pièces de l'appartement</h1>
+
+            <% for (let i = 0 ; i < rooms.length ; i++) { %>
+            
+                <div>Pièce: <%= rooms[i].name %> <%= rooms[i].length * rooms[i].width %> m² </br> </div>
+                
+                
+            <% } %>
+            </br>
+            Surface Totale = 
+            <form>
+                <input type = "submit" value="Encoder une autre pièce" placeholder="écrire ici" formaction="/user/add">
+
+        </form>
+    </body>
+</html>
